@@ -1,5 +1,5 @@
 {
-  "name": "@ieigen/zkzkvm-prover",
+  "name": "@ieigen/plonkjs",
   "version": "0.0.4",
   "description": "Eigen Javascript/NodeJS prover",
   "keywords": [
