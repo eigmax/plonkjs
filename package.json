@@ -27,7 +27,6 @@
   "main": "index.js",
   "files": [
     "pkg/*",
-    "client/*.js",
     "index.js"
   ],
   "dependencies" : {
