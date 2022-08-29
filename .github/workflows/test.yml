@@ -34,6 +34,8 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-npm-caches-${{ hashFiles('package-lock.json') }}
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: build wasm
         run: yarn build_node
       - name: Start test
