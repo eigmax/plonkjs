@@ -34,7 +34,7 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-npm-caches-${{ hashFiles('package-lock.json') }}
-      - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+      - name: build wasm
+        run: yarn build_node
       - name: Start test
         run: yarn test
